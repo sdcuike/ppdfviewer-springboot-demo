@@ -26,7 +26,6 @@ public class PdfviewerPdfjsController {
 
   @GetMapping("preview")
   public void preview(HttpServletRequest request, HttpServletResponse response) throws FileNotFoundException {
-//    File file = new File("/home/<username>/e95433e8-fb08-4c63-ba57-70331903562f.pdf");
     File file = ResourceUtils.getFile("classpath:doc/1996_PODC_queues.pdf");
     if (file.exists()) {
       byte[] data = null;
@@ -56,55 +55,3 @@ public class PdfviewerPdfjsController {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
